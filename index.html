@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão</title>
+    <style>
+        body{background-color: rgb(40, 13, 13); display: flex; flex-direction: column;
+            align-items: center; justify-content: center; min-height: 100vh; margin: 0;
+            background-size: cover; background-position: center; background-repeat: no-repeat;}
+
+        h1{color: rgb(255, 27, 27); font-size: 80px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;}
+
+        button{font-size: 24px; padding: 10px 20px; cursor: pointer; margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Não clique no botão!</h1>
+    <button onclick="mudarFundo()">Click em mim</button>
+
+    <script>
+        function mudarFundo(){
+            document.body.style.backgroundImage = "url('https://i.pinimg.com/736x/7b/c4/b3/7bc4b3515f22f63e820e107448ef8e7a.jpg')";
+
+            document.getElementById("titulo").innerText = "Já era";}
+    </script>
+</body>
+</html>
+
